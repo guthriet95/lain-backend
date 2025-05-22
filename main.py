@@ -5,6 +5,7 @@ import os
 app = Flask(__name__)
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
+# Lain's /chat endpoint
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
@@ -25,6 +26,7 @@ def chat():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# Optional root route for testing
 @app.route("/")
 def root():
     return "Lain backend online."
