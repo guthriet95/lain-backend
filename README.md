@@ -10,14 +10,3 @@ POST `/chat` with a JSON body:
 { "message": "Hello, Lain." }
 
 { "reply": "Present day... present time." }
-
-That version:
-- Uses proper Markdown code blocks (` ```json `)
-- Will render fine on GitHub
-- Doesn’t require you to do anything with that response code — it’s just an example of what your API returns
-
----
-
-Once you’ve saved that file and the others, your repo will be Render-ready.
-
-Ready to deploy next?
